@@ -16,7 +16,9 @@ namespace LinkedListUcs
                 "2:Adding element by using custom LinkedList\n" +
                 "3:AddFirst In LinkedList and Displaying \n" +
                 "4:Append in LinkedList and Displaying \n" +
-                "5: Insertion Between element.");
+                "5: Insertion Between element\n" +
+                "6: Deleting First Element From the Linked list");
+                
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -50,7 +52,16 @@ namespace LinkedListUcs
                     customLinkedList3.AddLast(70);
                     customLinkedList3.InsertBetweenNodes(56, 30, 70);
                     customLinkedList3.Display();
-                    break ;
+                    break;
+                case 6:
+                    CustomLinkedList customLinkedList4 = new CustomLinkedList();
+                    customLinkedList4.AddFirst(56);
+                    customLinkedList4.AddLast(30);
+                    customLinkedList4.AddLast(70);
+                    customLinkedList4.Display();
+                    customLinkedList4.RemovedFirst();
+                    customLinkedList4.Display();
+                    break;
                 default:
                     Console.WriteLine("Invalid Option Selected .Please try again");
                     break;
