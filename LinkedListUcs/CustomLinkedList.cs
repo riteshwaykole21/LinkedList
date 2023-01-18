@@ -31,6 +31,10 @@ namespace LinkedListUcs
             head = newNode;
             Console.WriteLine($"{newNode.data} is added into the list");
         }
+        public void Append(int data)
+        {
+            AddLast(data);
+        }
         public void Display()
         {
             Console.WriteLine("Displaying Nodes ");

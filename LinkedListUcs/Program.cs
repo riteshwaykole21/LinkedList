@@ -14,7 +14,8 @@ namespace LinkedListUcs
             Console.WriteLine("Please chooes as per given Option \n " +
                 "1: Adding Element by BuiltIn-LinkedList\n" +
                 "2:Adding element by using custom LinkedList\n" +
-                "3:AddFirst In LinkedList and Displaying");
+                "3:AddFirst In LinkedList and Displaying \n" +
+                "4:Append in LinkedList and Displaying");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -34,6 +35,13 @@ namespace LinkedListUcs
                     customLinkedList1.AddFirst(30);
                     customLinkedList1.AddFirst(56);
                     customLinkedList1.Display();
+                    break;
+                case 4:
+                    CustomLinkedList customLinkedList2 = new CustomLinkedList();
+                    customLinkedList2.Append(56);
+                    customLinkedList2.Append(30);
+                    customLinkedList2.Append(70);
+                    customLinkedList2.Display();
                     break;
                 default:
                     Console.WriteLine("Invalid Option Selected .Please try again");
